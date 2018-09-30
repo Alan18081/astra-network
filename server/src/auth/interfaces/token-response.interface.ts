@@ -1,4 +1,7 @@
+import {User} from '../../users/user.entity';
+
 export interface TokenResponse {
-  expires_in: string | number;
-  access_token: string;
+  expiresIn: string | number;
+  accessToken: string;
+  userInfo: User
 }

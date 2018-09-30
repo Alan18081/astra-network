@@ -26,7 +26,9 @@
     "bcrypt-node": "^0.1.0",
     "bcrypt-promise": "^2.0.0",
     "class-validator": "^0.9.1",
+    "cloudinary": "^1.11.0",
     "fastify-formbody": "^2.0.0",
+    "helmet": "^3.13.0",
     "jsonwebtoken": "^8.3.0",
     "node-gyp": "^3.8.0",
     "node-pre-gyp": "^0.11.0",
@@ -34,7 +36,7 @@
     "passport-jwt": "^4.0.0",
     "pg": "^7.4.3",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.3.3",
     "typeorm": "^0.2.7",
     "typescript": "^2.6.2"
   },

@@ -1,0 +1,8 @@
+<mat-list>
+  <mat-list-item *ngFor="let item of nav">
+    <a [routerLink]="[item.path]" fxLayout fxLayoutGap="5px">
+      <mat-icon>{{ item.icon }}</mat-icon>
+      <p class="caption">{{ item.caption }}</p>
+    </a>
+  </mat-list-item>
+</mat-list>

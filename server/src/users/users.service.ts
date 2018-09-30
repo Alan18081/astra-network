@@ -26,6 +26,13 @@ export class UsersService {
     return this.usersRepository.findOne({ email });
   }
 
+  async findByEmailWithPassword(email: string): Promise<User> {
+    return this.usersRepository.createQueryBuilder()
+      .select('user.email', email)
+      .addSelect('user.password')
+      .getOne();
+  }
+
   async create(userDto: CreateUserDto): Promise<User> {
     const password = this.passwordService.generatePassword(userDto.password);
     const user = {

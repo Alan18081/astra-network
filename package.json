@@ -10,5 +10,8 @@
     "server": "cd server && npm run start:dev"
   },
   "author": "Alan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "helmet": "^3.13.0"
+  }
 }

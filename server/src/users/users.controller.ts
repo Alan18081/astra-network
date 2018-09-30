@@ -8,6 +8,8 @@ import {AuthGuard} from '@nestjs/passport';
 import {User} from './user.entity';
 import {CreateUserDto} from './dto/create-user.dto';
 import {UpdateUserDto} from './dto/update-user.dto';
+import {TokenResponse} from '../auth/interfaces/token-response.interface';
+import {AuthService} from 'auth/auth.service';
 
 @ApiUseTags('users')
 @Controller('users')
@@ -38,7 +40,7 @@ export class UsersController {
   @UseGuards(AuthGuard('jwt'))
   @ApiBearerAuth()
   @ApiOperation({ title: 'Update existing user' })
-  async update( @Param('id') userId: number, @Body() userDto: UpdateUserDto) {
+  async update( @Param('id') userId: number, @Body() userDto: UpdateUserDto): Promise<User> {
     const user = await this.usersService.findById(userId);
     if(!user) {
       throw new HttpException('User with this id doesn\'t exist', HttpStatus.NOT_FOUND);
