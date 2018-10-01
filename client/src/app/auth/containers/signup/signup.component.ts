@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {matchPasswords} from './passwords-match.validator';
+import {matchPasswords} from '../../../helpers/validators/';
 import {Observable} from 'rxjs/index';
 import {Store} from '@ngrx/store';
 import * as fromStore from '../../../@store';

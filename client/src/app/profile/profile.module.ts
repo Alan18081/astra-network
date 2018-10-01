@@ -11,10 +11,14 @@ import { InfoListComponent } from './components/info-list/info-list.component';
 import { InfoTextComponent } from './components/info-text/info-text.component';
 import { FriendsListComponent } from './components/friends-list/friends-list.component';
 import { FriendsItemComponent } from './components/friends-item/friends-item.component';
+import { ProfileEditComponent } from './containers/profile-edit/profile-edit.component';
+import { ProfileInfoEditComponent } from './components/profile-info-edit/profile-info-edit.component';
+import { ProfileInfoEditComponent } from './components/profile-info-edit/profile-info-edit.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
 
 @NgModule({
   imports: [CoreModule, LayoutModule, ProfileRoutesModule, SharedModule],
-  declarations: [ProfileComponent, ProfileHeaderComponent, ProfileAboutComponent, InfoItemComponent, InfoListComponent, InfoTextComponent, FriendsListComponent, FriendsItemComponent],
+  declarations: [ProfileComponent, ProfileHeaderComponent, ProfileAboutComponent, InfoItemComponent, InfoListComponent, InfoTextComponent, FriendsListComponent, FriendsItemComponent, ProfileEditComponent, ProfileInfoEditComponent, ChangePasswordComponent],
   providers: []
 })
 export class ProfileModule {

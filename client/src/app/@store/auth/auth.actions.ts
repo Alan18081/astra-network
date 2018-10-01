@@ -16,6 +16,10 @@ export const RESET_PASSWORD_SUCCESS = '[Auth] Reset Password Success';
 export const RESET_PASSWORD_FAILED = '[Auth] Reset Password Failed';
 export const USER_CREATED = '[Auth] User Created';
 
+export const CHANGE_PASSWORD = '[Auth] Change password';
+export const UPDATE_PROFILE = '[Auth] Update profile';
+export const UPDATE_PROFILE_SUCCESS = '[Auth] Update profile success';
+
 export class Login implements Action {
   readonly type = LOGIN;
   constructor(public payload: {email: string, password: string}) {}
@@ -81,6 +85,11 @@ export class ResetPasswordFailed implements Action {
   constructor(public payload: any) {}
 }
 
+export class ChangePassword implements Action {
+  readonly type = CHANGE_PASSWORD;
+  constructor(public payload: { oldPassword: string, newPassword: string }) {}
+}
+
 export type AuthAction =
   | AuthSuccess
   | Login
@@ -94,4 +103,5 @@ export type AuthAction =
   | ResetPassword
   | ResetPasswordSuccess
   | ResetPasswordFailed
+  | ChangePassword
 
