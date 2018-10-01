@@ -8,7 +8,7 @@ export class NotesGateway {
 
   @SubscribeMessage(SocketCodes.ADD_NOTE)
   onAddNote(client, data: AddNoteDto) {
-
+    console.log(data);
   }
 
 }
