@@ -1,8 +1,9 @@
-import {Body, Controller, Get, Post, Query} from '@nestjs/common';
+import {Body, Controller, Get, Param, Post, Query} from '@nestjs/common';
 import {ApiOperation} from '@nestjs/swagger';
 import {Note} from './note.entity';
 import {NotesService} from './notes.service';
 import {AddNoteDto} from './dto/add-note.dto';
+import {IPaginatedResponse} from '../common/interfaces/paginated-response.inteface';
 
 @Controller('notes')
 export class NotesController {
@@ -12,11 +13,17 @@ export class NotesController {
 
   @Get()
   @ApiOperation({title: 'get notes'})
-  async findAll(
-    @Query('includeComments') includeComments: boolean,
-    @Query('includeAuthor') includeAuthor: boolean
-  ): Promise<Note[]> {
-    return this.notesService.findAll(includeComments, includeAuthor);
+  async findAll(@Query() query): Promise<Note[] | IPaginatedResponse<Note>> {
+    if(query.limit) {
+      return this.notesService.findNotesWithPagination(query);
+    }
+    return this.notesService.findAll(query);
+  }
+
+  @Get(':id')
+  @ApiOperation({ title: 'Get note by id' })
+  async findOneById(@Param('id') id, @Query() query): Promise<Note> {
+    return this.notesService.findNoteById(id, query);
   }
 
   @Post()

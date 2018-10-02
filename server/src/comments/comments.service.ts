@@ -2,9 +2,9 @@ import {Injectable} from '@nestjs/common';
 import {InjectRepository} from '@nestjs/typeorm';
 import {Comment} from './comment.entity';
 import {Repository} from 'typeorm';
-import {User} from '../users/user.entity';
 import {AddCommentDto} from './dto/add-comment.dto';
 import {Note} from '../notes/note.entity';
+import {User} from '../users/user.entity';
 
 @Injectable()
 export class CommentsService {
@@ -13,13 +13,20 @@ export class CommentsService {
     private readonly commentsRepository: Repository<Comment>
   ) {}
 
-  async addComment(payload: AddCommentDto, note: Note): Promise<Comment> {
+  async addComment(payload: AddCommentDto): Promise<Comment> {
     const newComment = {
       ...new Comment(),
-      ...payload,
-      note,
+      text: payload.text,
+      author: { id: payload.authorId } as User,
+      note: { id: payload.noteId  } as Note,
       createdAt: new Date().toISOString()
     };
+    await this.commentsRepository.manager
+      .createQueryBuilder()
+      .relation(Note, 'comments')
+      .of(payload.noteId)
+      .add(newComment);
+
     return this.commentsRepository.save(newComment);
   }
 

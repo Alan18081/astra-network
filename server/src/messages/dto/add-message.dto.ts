@@ -1,7 +1,6 @@
 import {IsNumber, IsString} from 'class-validator';
 
-export class AddCommentDto {
+export class AddMessageDto {
   @IsString() text: string;
   @IsNumber() authorId: number;
-  @IsNumber() noteId: number;
 }

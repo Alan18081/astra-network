@@ -1,5 +1,7 @@
 import {Entity, Column, PrimaryGeneratedColumn, Index, OneToMany} from 'typeorm';
 import {Comment} from '../comments/comment.entity';
+import {Note} from '../notes/note.entity';
+import {Message} from '../messages/message.entity';
 
 @Entity()
 export class User {
@@ -43,4 +45,10 @@ export class User {
 
   @OneToMany(type => Comment, comment => comment.author)
   comments: Comment[];
+
+  @OneToMany(type => Note, note => note.author)
+  notes: Note[];
+
+  @OneToMany(type => Message, message => message.author)
+  messages: Message[];
 }

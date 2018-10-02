@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn} from 'typeorm';
+import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn} from 'typeorm';
 import {Comment} from '../comments/comment.entity';
 import {User} from '../users/user.entity';
 
@@ -17,6 +17,7 @@ export class Note {
   authorId: number;
 
   @ManyToOne(type => User)
+  @JoinColumn({ name: 'authorId' })
   author: User;
 
   @Column()

@@ -1,26 +1,21 @@
-import {HttpException, HttpStatus, Injectable} from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 import {Note} from './note.entity';
 import {Repository} from 'typeorm';
 import {InjectRepository} from '@nestjs/typeorm';
-import {INotesService} from './interfaces/notes-service.interface';
 import {AddNoteDto} from './dto/add-note.dto';
 import {UpdateNoteDto} from './dto/update-note.dto';
-import {CommentsService} from '../comments/comments.service';
-import {AddCommentToNoteDto} from './dto/add-comment-to-note.dto';
-import {UsersService} from '../users/users.service';
+import {IPaginatedResponse} from '../common/interfaces/paginated-response.inteface';
 import {User} from '../users/user.entity';
-import {Comment} from '../comments/comment.entity';
 
 @Injectable()
-export class NotesService implements INotesService {
+export class NotesService {
   constructor(
     @InjectRepository(Note) private readonly notesRepository: Repository<Note>,
-    private readonly commentsService: CommentsService,
-    private readonly usersService: UsersService
   ) {}
 
-  findAll(includeComments: boolean, includeAuthor: boolean): Promise<Note[]> {
+  findAll(query): Promise<Note[]> {
     const relations = [];
+    const {includeComments, includeAuthor} = query;
     if(includeComments) {
       relations.push('comments');
     }
@@ -32,54 +27,53 @@ export class NotesService implements INotesService {
     });
   }
 
-  async findNoteById(id: number, includeComments: boolean, includeAuthor: boolean): Note {
-    const note = await this.notesRepository.findOne(id);
+  async findNotesWithPagination(query): Promise<IPaginatedResponse<Note>> {
+    const {limit, page = 1, includeComments, includeAuthor} = query;
+    const sqlQuery = this.notesRepository
+      .createQueryBuilder('note')
+      .select('note');
     if(includeAuthor) {
-      note.author = await this.notesRepository
-        .createQueryBuilder()
-        .relation(User, 'author')
-        .of(note)
-        .loadOne();
+      sqlQuery.leftJoinAndSelect('note.author', 'author');
     }
     if(includeComments) {
-      note.comments = await this.notesRepository
-        .createQueryBuilder()
-        .relation(Comment, 'comments')
-        .of(note)
-        .loadMany();
+      sqlQuery.leftJoinAndSelect('note.comments', 'comment');
     }
-    return note;
+    const [notes, totalCount] = await sqlQuery
+      .limit(limit)
+      .offset(limit * (page - 1))
+      .getManyAndCount();
+    return {
+      list: notes,
+      page: +page + 1,
+      itemsPerPage: limit,
+      totalCount
+    };
+  }
+
+  async findNoteById(id: number, query): Promise<Note> {
+    const {includeAuthor, includeComments} = query;
+    const sqlQuery = this.notesRepository
+      .createQueryBuilder('note');
+    if(includeAuthor) {
+      sqlQuery.leftJoinAndSelect('note.author', 'author');
+    }
+    if(includeComments) {
+      sqlQuery.leftJoinAndSelect('note.comments', 'comment');
+    }
+    return sqlQuery.where('note.id = :id', {id}).getOne();
   }
 
   async addNote(payload: AddNoteDto): Promise<Note> {
-    const author = await this.usersService.findById(payload.authorId);
-    if(!author) {
-      throw new HttpException('User not found', HttpStatus.NOT_FOUND);
-    }
     const newNote = {
       ...new Note(),
       ...payload,
-      author,
+      author: { id: payload.authorId } as User,
       createdAt: new Date().toISOString()
     };
     return this.notesRepository.save(newNote);
   }
 
-  async addCommentToNote(payload: AddCommentToNoteDto): Promise<Note> {
-    const note = await this.findNoteById(payload.noteId, false, false);
-    const newComment = await this.commentsService.addComment(payload, note);
-    await this.notesRepository
-      .createQueryBuilder()
-      .relation(Comment, 'comments')
-      .add(newComment);
-
-    return this.notesRepository
-      .createQueryBuilder('note')
-      .leftJoinAndSelect('note.comments', 'comment')
-      .getOne();
-  }
-
-  async updateNote(payload: UpdateNoteDto): Promise<Note> {
+  async updateNote(payload: UpdateNoteDto, query): Promise<Note> {
     await this.notesRepository.update(
       {
         id: payload.id
@@ -88,7 +82,7 @@ export class NotesService implements INotesService {
         ...payload
       }
     );
-    return this.findNoteById(payload.id);
+    return this.findNoteById(payload.id, query);
   }
 
   removeNote(id: number): Promise<any> {
