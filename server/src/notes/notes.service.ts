@@ -70,7 +70,8 @@ export class NotesService {
       author: { id: payload.authorId } as User,
       createdAt: new Date().toISOString()
     };
-    return this.notesRepository.save(newNote);
+    await this.notesRepository.save(newNote);
+    return this.notesRepository.findOne({ id: newNote.id });
   }
 
   async updateNote(payload: UpdateNoteDto, query): Promise<Note> {

@@ -1,7 +1,8 @@
-import {Entity, Column, PrimaryGeneratedColumn, Index, OneToMany} from 'typeorm';
+import {Entity, Column, PrimaryGeneratedColumn, Index, OneToMany, ManyToMany} from 'typeorm';
 import {Comment} from '../comments/comment.entity';
 import {Note} from '../notes/note.entity';
 import {Message} from '../messages/message.entity';
+import {Chat} from '../chats/chat.entity';
 
 @Entity()
 export class User {
@@ -51,4 +52,7 @@ export class User {
 
   @OneToMany(type => Message, message => message.author)
   messages: Message[];
+
+  @ManyToMany(type => Chat, chat => chat.users)
+  chats: Chat[];
 }

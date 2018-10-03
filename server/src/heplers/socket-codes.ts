@@ -1,6 +1,7 @@
-export enum SocketCodes {
-  GET_NOTES = 20,
-  ADD_NOTE = 21,
-  REMOVE_NOTE = 22,
-  UPDATE_NOTE = 23
-}
+export const SocketCodes = {
+  GET_NOTES: 'GET_NOTES',
+  GET_NOTE_BY_ID: 'GET_NOTE_BY_ID',
+  ADD_NOTE: 'ADD_NOTE',
+  UPDATE_NOTE: 'UPDATE_NOTE',
+  REMOVE_NOTE: 'REMOVE_NOTE'
+};
