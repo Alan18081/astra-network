@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a49b1b5-e83b-4fc1-bc70-ea392a2a7503" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chat.entity.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/dto/add-chat.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/dto/find-params.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/dto/update-chat.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/common/interfaces/socket-action.inteface.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/notes.actions.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.actions.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/messages.actions.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/heplers/socket-codes.ts" afterPath="$PROJECT_DIR$/server/src/heplers/socket-codes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/message.entity.ts" afterPath="$PROJECT_DIR$/server/src/messages/message.entity.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts" afterPath="$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" afterPath="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/messages.module.ts" afterPath="$PROJECT_DIR$/server/src/messages/messages.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.actions.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.actions.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.service.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/users/user.entity.ts" afterPath="$PROJECT_DIR$/server/src/users/user.entity.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,56 +32,112 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="notes.gateway.ts" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="notes.gateway.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/notes/notes.gateway.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="279">
+              <caret line="24" column="74" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
               <folding>
-                <element signature="e#0#99#0" expanded="true" />
+                <element signature="e#0#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket-action.inteface.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/common/interfaces/socket-action.inteface.ts">
+      <file leaf-file-name="notes.actions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/notes/notes.actions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get-notes.dto.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.gateway.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/messages/messages.gateway.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remove-message.dto.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notes.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/notes/notes.service.ts">
+      <file leaf-file-name="messages.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/messages/messages.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+            <state relative-caret-position="217">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chats.actions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/chats/chats.actions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chats.gateway.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/chats/chats.gateway.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket-codes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/heplers/socket-codes.ts">
+      <file leaf-file-name="join-chat.dto.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="93">
+              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-note.dto.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts">
+      <file leaf-file-name="add-message.dto.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -94,17 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.html" />
-        <option value="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.html" />
-        <option value="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/@store/auth/auth.actions.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/comment.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/update-note.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/add-comment.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/services/comments.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/interfaces/notes-service.interface.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/entities/comment.entity.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/entities/note.entity.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/services/notes.service.ts" />
@@ -126,8 +172,6 @@
         <option value="$PROJECT_DIR$/server/src/users/users.controller.ts" />
         <option value="$PROJECT_DIR$/server/src/users/users.service.ts" />
         <option value="$PROJECT_DIR$/server/src/messages/dto/message.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/messages.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" />
         <option value="$PROJECT_DIR$/server/src/messages/dto/update-message.dto.ts" />
         <option value="$PROJECT_DIR$/server/src/messages/messages.service.ts" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -141,10 +185,23 @@
         <option value="$PROJECT_DIR$/server/src/chats/chats.service.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts" />
         <option value="$PROJECT_DIR$/server/src/heplers/socket-codes.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.service.ts" />
         <option value="$PROJECT_DIR$/server/src/common/interfaces/socket-action.inteface.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/notes.actions.ts" />
+        <option value="$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/notes/notes.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" />
+        <option value="$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/messages/messages.actions.ts" />
+        <option value="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" />
+        <option value="$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" />
+        <option value="$PROJECT_DIR$/server/src/messages/messages.module.ts" />
+        <option value="$PROJECT_DIR$/server/src/chats/chats.actions.ts" />
+        <option value="$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts" />
+        <option value="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" />
       </list>
     </option>
   </component>
@@ -267,7 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="messages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,11 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
+              <option name="myItemId" value="chats" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,7 +368,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="chats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,20 +385,22 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fitness-tracker" />
+    <property name="last_opened_file_path" value="E:/Portfolio works/Portfolio" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\chats\dto" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\messages" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\common\dto" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\common\interfaces" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\notes" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\comments" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\messages\dto" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\notes\dto" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\chats\dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +479,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2510981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -428,7 +487,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6699507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -453,146 +512,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/validators/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/typeorm/query-builder/QueryBuilder.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/update-note.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#63#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="8302" column="10" lean-forward="false" selection-start-line="8302" selection-start-column="10" selection-end-line="8302" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/auth/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/add-comment-to-note.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/comments/dto/remove-comment.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/comments/comments.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/typeorm/query-builder/RelationQueryBuilder.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/comments/dto/add-comment.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/comments/comment.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#86#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/comments/comments.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/comments/comments.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -603,27 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#73#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/common/interfaces/paginated-response.inteface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -644,14 +546,6 @@
           <folding>
             <element signature="e#0#140#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/note.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,28 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,14 +596,6 @@
           <folding>
             <element signature="e#0#86#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/interfaces/notes-service.interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -821,15 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,13 +693,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.service.ts">
+    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="62">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/heplers/socket-codes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,15 +717,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/heplers/socket-codes.ts">
+    <entry file="file://$PROJECT_DIR$/server/src/common/interfaces/paginated-response.inteface.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.actions.ts">
+    <entry file="file://$PROJECT_DIR$/server/src/notes/interfaces/notes-service.interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/files/files.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/note.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/profile/profile.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/interfaces/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -875,12 +819,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/adapters/io-adapter.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/notes/notes.gateway.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="279">
+          <caret line="24" column="74" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.gateway.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.gateway.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
           </folding>
         </state>
       </provider>

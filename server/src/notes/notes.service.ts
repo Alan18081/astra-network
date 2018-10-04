@@ -6,6 +6,7 @@ import {AddNoteDto} from './dto/add-note.dto';
 import {UpdateNoteDto} from './dto/update-note.dto';
 import {IPaginatedResponse} from '../common/interfaces/paginated-response.inteface';
 import {User} from '../users/user.entity';
+import {GetNotesDto} from './dto/get-notes.dto';
 
 @Injectable()
 export class NotesService {
@@ -13,35 +14,39 @@ export class NotesService {
     @InjectRepository(Note) private readonly notesRepository: Repository<Note>,
   ) {}
 
-  findAll(query): Promise<Note[]> {
-    const relations = [];
-    const {includeComments, includeAuthor} = query;
+  findAll({includeComments, authorId}: GetNotesDto): Promise<Note[]> {
+    const sqlQuery = this.notesRepository.createQueryBuilder('note');
+
     if(includeComments) {
-      relations.push('comments');
+      sqlQuery.leftJoinAndSelect('note.comments', 'comment');
     }
-    if(includeAuthor) {
-      relations.push('author');
+
+    if(authorId) {
+      sqlQuery.where('note.authorId = :id', {id: authorId});
     }
-    return this.notesRepository.find({
-      relations
-    });
+
+    return sqlQuery.getMany();
   }
 
   async findNotesWithPagination(query): Promise<IPaginatedResponse<Note>> {
     const {limit, page = 1, includeComments, includeAuthor} = query;
+
     const sqlQuery = this.notesRepository
-      .createQueryBuilder('note')
-      .select('note');
+      .createQueryBuilder('note');
+
     if(includeAuthor) {
       sqlQuery.leftJoinAndSelect('note.author', 'author');
     }
+
     if(includeComments) {
       sqlQuery.leftJoinAndSelect('note.comments', 'comment');
     }
+
     const [notes, totalCount] = await sqlQuery
       .limit(limit)
       .offset(limit * (page - 1))
       .getManyAndCount();
+
     return {
       list: notes,
       page: +page + 1,

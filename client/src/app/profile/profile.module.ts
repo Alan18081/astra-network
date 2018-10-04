@@ -13,7 +13,6 @@ import { FriendsListComponent } from './components/friends-list/friends-list.com
 import { FriendsItemComponent } from './components/friends-item/friends-item.component';
 import { ProfileEditComponent } from './containers/profile-edit/profile-edit.component';
 import { ProfileInfoEditComponent } from './components/profile-info-edit/profile-info-edit.component';
-import { ProfileInfoEditComponent } from './components/profile-info-edit/profile-info-edit.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 
 @NgModule({
@@ -21,6 +20,4 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
   declarations: [ProfileComponent, ProfileHeaderComponent, ProfileAboutComponent, InfoItemComponent, InfoListComponent, InfoTextComponent, FriendsListComponent, FriendsItemComponent, ProfileEditComponent, ProfileInfoEditComponent, ChangePasswordComponent],
   providers: []
 })
-export class ProfileModule {
-
-}
+export class ProfileModule {}
