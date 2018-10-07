@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormGroup, Validators} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {matchPasswords} from '../../../helpers/validators';
 
 @Component({
@@ -10,9 +10,9 @@ import {matchPasswords} from '../../../helpers/validators';
 export class ChangePasswordComponent implements OnInit {
   @Output() passwordChanged = new EventEmitter<{oldPassword: string, password: string}>();
   form: FormGroup = new FormGroup({
-    oldPassword: new FormGroup(null, [Validators.required, Validators.minLength(3)]),
-    password: new FormGroup(null, [Validators.required, Validators.minLength(3)]),
-    confirmPassword: new FormGroup(null, [Validators.required, Validators.minLength(3)])
+    oldPassword: new FormControl(null, [Validators.required, Validators.minLength(3)]),
+    password: new FormControl(null, [Validators.required, Validators.minLength(3)]),
+    confirmPassword: new FormControl(null, [Validators.required, Validators.minLength(3)])
   }, matchPasswords);
 
   constructor() { }

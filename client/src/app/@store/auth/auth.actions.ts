@@ -1,6 +1,7 @@
 import {Action} from '@ngrx/store'
 import {ISignUpData} from '../../helpers/auth/signup.interface';
 import {IAuthSuccess} from '../../helpers/auth/auth-success.interface';
+import {User} from '../../helpers/models/user.model';
 
 export const GET_USER = '[Auth] Get User';
 export const GET_USER_FAILED = '[Auth] Get User Failed';
@@ -88,6 +89,16 @@ export class ResetPasswordFailed implements Action {
 export class ChangePassword implements Action {
   readonly type = CHANGE_PASSWORD;
   constructor(public payload: { oldPassword: string, newPassword: string }) {}
+}
+
+export class UpdateProfile implements Action {
+  readonly type = UPDATE_PROFILE;
+  constructor(public payload: User) {}
+}
+
+export class UpdateProfileSuccess implements Action {
+  readonly type = UPDATE_PROFILE_SUCCESS;
+  constructor(public payload: User) {}
 }
 
 export type AuthAction =

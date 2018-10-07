@@ -1,6 +1,7 @@
 import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn} from 'typeorm';
 import {Comment} from '../comments/comment.entity';
 import {User} from '../users/user.entity';
+import {File} from '../files/file.entity';
 
 @Entity()
 export class Note {
@@ -13,9 +14,6 @@ export class Note {
   @Column({ length: 255, nullable: true })
   text: string;
 
-  @Column()
-  authorId: number;
-
   @ManyToOne(type => User)
   @JoinColumn({ name: 'authorId' })
   author: User;
@@ -25,5 +23,8 @@ export class Note {
 
   @OneToMany(type => Comment, comment => comment.note)
   comments: Comment[];
+
+  @OneToMany(type => File, file => file.note)
+  files: File[];
 
 }

@@ -14,7 +14,6 @@ export class ChatsGateway {
 
   @SubscribeMessage(actions.JOIN_ROOM)
   async onJoinChat(client, payload: JoinChatDto) {
-
     this.server.to(payload.chatId).emit();
   }
 }

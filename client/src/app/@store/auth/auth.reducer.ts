@@ -1,5 +1,5 @@
 import * as actions from './auth.actions';
-import {IUser} from '../../helpers/models/user.model';
+import {User} from '../../helpers/models/user.model';
 
 export interface IAuthState {
   token: string;
@@ -7,7 +7,7 @@ export interface IAuthState {
   loading: boolean;
   loginError: string;
   signUpError: string;
-  userInfo: IUser,
+  userInfo: User,
   userCreated: boolean
 }
 

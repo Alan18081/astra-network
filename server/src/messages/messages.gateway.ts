@@ -18,11 +18,10 @@ export class MessagesGateway {
   ) {}
 
   @SubscribeMessage(actions.ADD_MESSAGE)
-  onAddMessage(client, payload: AddMessageDto): Observable<actions.AddMessage> {
-   return from(this.messagesService.addMessage(payload))
-     .pipe(
-       map((message: Message) => new actions.AddMessage(message))
-     );
+  async onAddMessage(client, payload: AddMessageDto): Promise<void> {
+   const message = await this.messagesService.addMessage(payload);
+   const action = new actions.AddMessage(message);
+   this.server.to(payload.chatId).emit(action.event, action.data);
   }
 
   @SubscribeMessage(actions.UPDATE_MESSAGE)

@@ -1,15 +1,32 @@
 import {NgModule} from '@angular/core';
-import { SectionHeadComponent } from './components/section-head/section-head.component';
 import {CoreModule} from '../core/core.module';
-import { AvatarComponent } from './components/avatar/avatar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {
+  SubtitleComponent,
+  TitleComponent,
+  FileLoaderComponent,
+  FilesListLoaderComponent,
+  SectionHeadComponent,
+  AvatarComponent,
+  UserBlockComponent
+} from './components';
+
 
 const components = [
   SectionHeadComponent,
-  AvatarComponent
+  AvatarComponent,
+  FileLoaderComponent,
+  FilesListLoaderComponent,
+  TitleComponent,
+  SubtitleComponent,
+  UserBlockComponent
 ];
 
 @NgModule({
-  imports: [CoreModule],
+  imports: [
+    CoreModule,
+    ReactiveFormsModule
+  ],
   declarations: [...components],
   exports: [...components]
 })

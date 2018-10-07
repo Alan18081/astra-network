@@ -28,9 +28,13 @@ export class AuthService {
     });
   }
 
-  setToken(token: string, expiresIn: number | string) {
+  setToken(token: string, expiresIn: number | string): void {
     localStorage.setItem('authToken', token);
     localStorage.setItem('authTokenExpiresIn', expiresIn.toString());
+  }
+
+  updateProfile(userInfo) {
+    return this.http.put(`${API_URL}/users/${userInfo.id}`, userInfo);
   }
 
   getToken() {

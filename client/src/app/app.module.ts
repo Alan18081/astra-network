@@ -12,6 +12,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {AuthTokenInterceptor} from './helpers/interceptors/auth-token.interceptor';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {AuthGuard} from './helpers/guards/auth.guard';
+import {FilesService} from './helpers/services/files.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {AuthGuard} from './helpers/guards/auth.guard';
       useClass: AuthTokenInterceptor,
       multi: true
     },
-    AuthGuard
+    AuthGuard,
+    FilesService
   ],
   bootstrap: [AppComponent]
 })

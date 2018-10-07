@@ -2,7 +2,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import * as fromStore from '../../../@store';
 import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs/index';
-import {IUser} from '../../../helpers/models/user.model';
+import {User} from '../../../helpers/models/user.model';
 import {map} from 'rxjs/internal/operators';
 
 @Component({
@@ -12,7 +12,7 @@ import {map} from 'rxjs/internal/operators';
 })
 export class HeaderComponent implements OnInit {
   @Output() menuClicked = new EventEmitter<boolean>();
-  userInfo$: Observable<IUser>;
+  userInfo$: Observable<User>;
 
   constructor(
     private readonly store: Store<fromStore.IAppState>
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
 
   getFullName(): Observable<string> {
     return this.userInfo$.pipe(
-      map((info: IUser) => {
+      map((info: User) => {
         return `${info.firstName} ${info.lastName}`;
       })
     )

@@ -2,23 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a49b1b5-e83b-4fc1-bc70-ea392a2a7503" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.actions.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/messages.actions.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/@store/notes/notes.reducer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/@store/notes/notes.selectors.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/@store/state.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/helpers/interfaces/add-note.interface.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/helpers/models/comment.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/helpers/models/note.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/helpers/services/notes.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/notes/components/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/notes/containers/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/notes/notes.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/profile/components/profile-edit/profile-edit.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/profile/components/profile-edit/profile-edit.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/change-password/change-password.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/app/shared/components/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/files/dto/add-file.dto.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/files/file.entity.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/app/helpers/auth/user.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/app/helpers/services/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/profile-info-edit/profile-info-edit.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.css" afterPath="$PROJECT_DIR$/client/src/app/@store/notes/index.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.html" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/change-password/change-password.component.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.spec.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/change-password/change-password.component.spec.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/change-password/change-password.component.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/change-password/change-password.component.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/profile-info-edit/profile-info-edit.component.css" afterPath="$PROJECT_DIR$/client/src/app/@store/notes/notes.actions.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/profile-info-edit/profile-info-edit.component.spec.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.spec.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/components/profile-info-edit/profile-info-edit.component.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.scss" afterPath="$PROJECT_DIR$/client/src/app/@store/notes/notes.effects.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.spec.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/components/profile-edit/profile-edit.component.spec.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/app/profile/containers/profile-edit/profile-edit.component.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/components/profile-edit/profile-edit.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package-lock.json" afterPath="$PROJECT_DIR$/client/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/@store/auth/auth.actions.ts" afterPath="$PROJECT_DIR$/client/src/app/@store/auth/auth.actions.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/@store/auth/auth.effects.ts" afterPath="$PROJECT_DIR$/client/src/app/@store/auth/auth.effects.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/@store/auth/auth.reducer.ts" afterPath="$PROJECT_DIR$/client/src/app/@store/auth/auth.reducer.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/@store/index.ts" afterPath="$PROJECT_DIR$/client/src/app/@store/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/helpers/auth/auth-success.interface.ts" afterPath="$PROJECT_DIR$/client/src/app/helpers/auth/auth-success.interface.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/helpers/auth/index.ts" afterPath="$PROJECT_DIR$/client/src/app/helpers/auth/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/helpers/models/user.model.ts" afterPath="$PROJECT_DIR$/client/src/app/helpers/models/user.model.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/helpers/services/auth.service.ts" afterPath="$PROJECT_DIR$/client/src/app/helpers/services/auth.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/layout/components/user-block/user-block.component.html" afterPath="$PROJECT_DIR$/client/src/app/layout/components/user-block/user-block.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/layout/containers/header/header.component.ts" afterPath="$PROJECT_DIR$/client/src/app/layout/containers/header/header.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/profile/containers/profile/profile.component.html" afterPath="$PROJECT_DIR$/client/src/app/profile/containers/profile/profile.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/profile/profile-routes.module.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/profile-routes.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" afterPath="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" afterPath="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/messages.module.ts" afterPath="$PROJECT_DIR$/server/src/messages/messages.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.actions.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.actions.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/notes.service.ts" afterPath="$PROJECT_DIR$/server/src/notes/notes.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app/shared/shared.module.ts" afterPath="$PROJECT_DIR$/client/src/app/shared/shared.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/yarn.lock" afterPath="$PROJECT_DIR$/client/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" afterPath="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/files/files.controller.ts" afterPath="$PROJECT_DIR$/server/src/files/files.controller.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/files/files.module.ts" afterPath="$PROJECT_DIR$/server/src/files/files.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/files/files.service.ts" afterPath="$PROJECT_DIR$/server/src/files/files.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" afterPath="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/notes/note.entity.ts" afterPath="$PROJECT_DIR$/server/src/notes/note.entity.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,111 +73,43 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notes.gateway.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/notes/notes.gateway.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="24" column="74" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notes.actions.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/notes/notes.actions.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get-notes.dto.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.gateway.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/messages/messages.gateway.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remove-message.dto.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/messages/messages.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chats.actions.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/chats/chats.actions.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chats.gateway.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/chats/chats.gateway.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join-chat.dto.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-message.dto.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts">
+      <file leaf-file-name="notes.effects.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/notes.effects.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/app/helpers/services/notes.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-note.interface.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/helpers/interfaces/add-note.interface.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/@store/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -145,63 +117,74 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>I</find>
+      <find>IUs</find>
+      <find>IUse</find>
+      <find>IUser</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/src/notes/entities/comment.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/entities/note.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/services/notes.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/add-comment-to-note.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/app.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/comments.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/components/file-loader/file-loader.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/file-loader/file-loader.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/title/title.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/subtitle/subtitle.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/subtitle/subtitle.component.scss" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/title/title.component.scss" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/components/profile-edit/profile-edit.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/file-loader/file-loader.component.scss" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/file-loader/file-loader.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/interfaces/update-user.interface.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/containers/profile-info-edit/profile-info-edit.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/services/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/models/file.model.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/services/files.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/auth/auth.effects.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.scss" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/note-form/note-form.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/add-note/add-note.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/add-note/add-note.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/profile/containers/profile/profile.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/components/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/containers/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/state.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/notes/index.ts" />
         <option value="$PROJECT_DIR$/server/src/notes/note.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/comments.controller.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/dto/add-comment.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/comments.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/comments/comment.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/interfaces/paginated-response.inteface.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.controller.ts" />
-        <option value="$PROJECT_DIR$/server/src/main.ts" />
-        <option value="$PROJECT_DIR$/server/src/users/dto/pagination-params.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/users/dto/find-all.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/users/dto/find-params.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/users/users.controller.ts" />
-        <option value="$PROJECT_DIR$/server/src/users/users.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/dto/message.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/dto/update-message.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/messages.service.ts" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/server/src/users/user.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/message.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/dto/update-chat.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/dto/add-chat.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/dto/find-params.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/chat.entity.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/chats.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/chats.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/heplers/socket-codes.ts" />
-        <option value="$PROJECT_DIR$/server/src/common/interfaces/socket-action.inteface.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.actions.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/models/user.model.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/auth/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/models/comment.model.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/models/note.model.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/notes/notes.actions.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/notes.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/index.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/components/user-block/user-block.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/components/note/note.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/components/note/note.component.scss" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/components/note/note.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/notes/notes.reducer.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/notes/notes.selectors.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/containers/notes/notes.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/notes/containers/notes/notes.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/profile/profile.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/messages.actions.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/notes/notes.gateway.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/messages.gateway.ts" />
-        <option value="$PROJECT_DIR$/server/src/messages/messages.module.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/chats.actions.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts" />
-        <option value="$PROJECT_DIR$/server/src/chats/chats.gateway.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/@store/notes/notes.effects.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/interfaces/add-note.interface.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/helpers/services/notes.service.ts" />
       </list>
     </option>
   </component>
@@ -261,7 +244,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,7 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,7 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -316,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,7 +306,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="messages" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,7 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -346,7 +328,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chats" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,7 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -368,16 +354,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chats" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="astra-network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="astra-network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="astra-network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="astra-network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="@store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,17 +437,17 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\messages" />
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\common\dto" />
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\common\interfaces" />
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\notes" />
-      <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\comments" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\messages\dto" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\notes\dto" />
       <recent name="C:\Users\user\WebstormProjects\astra-network\server\src\chats\dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\astra-network\client\src\app\notes\components" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\client\src\app\notes\containers" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\client\src\app\helpers\interfaces" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\client\src\app\shared\components" />
+      <recent name="C:\Users\user\WebstormProjects\astra-network\client\src\app\profile\containers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -487,7 +534,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6699507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -512,204 +559,169 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/comments/comments.controller.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="248">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/users/dto/find-params.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#72#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/users/users.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#140#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/common/dto/pagination-params.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/update-message.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1209">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="3" />
+          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/users/user.entity.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/files-list-loader/files-list-loader.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/message.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="589">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#86#0" expanded="false" />
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/dto/find-params.dto.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/note-form/note-form.component.html" />
+    <entry file="file://$PROJECT_DIR$/client/node_modules/@angular/core/src/metadata/ng_module.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4555">
+          <caret line="119" column="17" lean-forward="false" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/add-note/add-note.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/add-note/add-note.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/profile/containers/profile/profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/state.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/comments/comments.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#72#0" expanded="false" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/users/users.service.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/auth/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="31">
+          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/typeorm/find-options/FindOneOptions.d.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/auth/auth-success.interface.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/users/users.module.ts">
+    <entry file="file://$PROJECT_DIR$/server/src/notes/note.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="558">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/typeorm/repository/Repository.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="167" column="67" lean-forward="true" selection-start-line="167" selection-start-column="67" selection-end-line="167" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/chat.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#86#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/dto/update-chat.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/dto/add-chat.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/utils/socket-gateway.decorator.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/models/user.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/add-note.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/heplers/socket-codes.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/models/file.model.ts" />
+    <entry file="file://$PROJECT_DIR$/server/src/comments/comment.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#86#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/common/interfaces/socket-action.inteface.ts">
+    <entry file="file://$PROJECT_DIR$/client/node_modules/@ngrx/entity/src/models.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/models/comment.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/models/note.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/notes.actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/avatar/avatar.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/avatar/avatar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -717,228 +729,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/common/interfaces/paginated-response.inteface.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/user-block/user-block.component.html" />
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/user-block/user-block.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/interfaces/notes-service.interface.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/layout/components/user-block/user-block.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/files/files.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="93">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
+            <marker date="1538836016046" expanded="true" signature="198:253" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.controller.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/layout/layout.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="-93">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/containers/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.module.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/components/user-block/user-block.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="217">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1538905915506" expanded="true" signature="156:269" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/core/core.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/auth/auth.reducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2052">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/note.entity.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/auth/auth.selectors.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/@ngrx/store/src/selector.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/auth/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/notes.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/notes.reducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/notes.selectors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/containers/notes/notes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/containers/notes/notes.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="65" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/note/note.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/profile/profile.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes-with-pagination.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        <state relative-caret-position="-6">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-params.dto.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/note/note.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="186">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.service.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/layout/components/user-block/user-block.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-note-by-id.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state relative-caret-position="31">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/interfaces/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/adapters/io-adapter.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-254">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@nestjs/websockets/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/dto/get-notes.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.actions.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/notes/components/note/note.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/notes/notes.gateway.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="74" lean-forward="false" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/remove-message.dto.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.gateway.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/messages.actions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/messages/dto/add-message.dto.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/@store/notes/notes.effects.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.actions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/dto/join-chat.dto.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/interfaces/add-note.interface.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/chats/chats.gateway.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/helpers/services/notes.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="473">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

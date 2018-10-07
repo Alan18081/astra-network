@@ -7,7 +7,7 @@ import {catchError, switchMap} from 'rxjs/internal/operators';
 import {of} from 'rxjs/index';
 import {IAuthSuccess} from '../../helpers/auth/auth-success.interface';
 import {Router} from '@angular/router';
-import {IUser} from '../../helpers/models/user.model';
+import {User} from '../../helpers/models/user.model';
 
 @Injectable()
 export class AuthEffects {
@@ -23,7 +23,7 @@ export class AuthEffects {
     switchMap(() => {
       return this.authService.getUser()
         .pipe(
-          map((response: IUser) => {
+          map((response: User) => {
             const tokenInfo = this.authService.getToken();
             this.router.navigate(['/','profile']);
             return new authActions.AuthSuccess({
@@ -86,6 +86,22 @@ export class AuthEffects {
           catchError(error => of(new authActions.ResetPasswordFailed(error)))
         )
     })
-  )
+  );
 
+  @Effect()
+  updateProfile$ = this.actions$
+    .pipe(
+      ofType(authActions.UPDATE_PROFILE),
+      map((action: authActions.UpdateProfile) => action.payload),
+      switchMap((info) => {
+        return this.authService.updateProfile(info)
+          .pipe(
+            map((info: User) => new authActions.UpdateProfileSuccess(info)),
+            catchError(error => {
+              console.log(error);
+              return of(error);
+            })
+          );
+      })
+    );
 }

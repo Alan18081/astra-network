@@ -1,4 +1,4 @@
-export interface IUser {
+export interface User {
   id: number,
   firstName: string;
   lastName: string;
@@ -6,6 +6,6 @@ export interface IUser {
   phone?: string;
   info?: string;
   status?: string;
-  avatar: string;
-  background: string;
+  avatar: string | File;
+  background: string | File;
 }

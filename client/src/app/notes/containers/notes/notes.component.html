@@ -1,0 +1,8 @@
+<div>
+  <div class="list">
+    <app-note *ngFor="let note of (notes | async)" [note]="note"></app-note>
+  </div>
+  <button mat-fab (click)="showModal()">
+    <mat-icon>plus</mat-icon>
+  </button>
+</div>
