@@ -1,0 +1,44 @@
+.info {
+  padding: 10px 0;
+}
+
+.bg {
+  height: 150px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  margin-right: 30px;
+}
+
+.name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.status {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background: blueviolet;
+}

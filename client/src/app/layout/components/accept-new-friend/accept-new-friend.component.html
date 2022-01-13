@@ -1,0 +1,12 @@
+<app-avatar [url]="avatar" [size]="10"></app-avatar>
+<div>
+  <p class="caption"><a [routerLink]="['/users', id]">{{ name }}</a> want to become your friend</p>
+  <div fxLayout fxLayoutGap="10px">
+    <button mat-icon-button color="primary" (click)="acceptFriend()">
+      <mat-icon>plus</mat-icon>
+    </button>
+    <button mat-icon-button color="accent" (click)="rejectFriend()">
+      <mat-icon>times</mat-icon>
+    </button>
+  </div>
+</div>

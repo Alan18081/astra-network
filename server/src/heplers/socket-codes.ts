@@ -1,0 +1,7 @@
+export const SocketCodes = {
+  GET_NOTES: 'GET_NOTES',
+  GET_NOTE_BY_ID: 'GET_NOTE_BY_ID',
+  ADD_NOTE: 'ADD_NOTE',
+  UPDATE_NOTE: 'UPDATE_NOTE',
+  REMOVE_NOTE: 'REMOVE_NOTE'
+};

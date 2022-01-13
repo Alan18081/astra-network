@@ -1,0 +1,18 @@
+<div class="container" fxLayout fxLayoutGap="20px">
+  <div fxLayout >
+    <div *ngFor="let url of urlList" class="image" [ngStyle]="{
+	      backgroundImage: 'url(' + url + ')'
+      }"></div>
+  </div>
+  <div class="input">
+    <button mat-icon-button>
+      <mat-icon>{{ icon }}</mat-icon>
+    </button>
+    <input
+      type="file"
+      #file
+      (change)="changeHandler(file.files)"
+      multiple
+    >
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <div fxLayoutAlign="space-between center" class="container">
+    <button mat-icon-button (click)="onClick()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div fxLayout>
+      <app-notifications
+        [notifications]="['Hello, some notifications']"
+      ></app-notifications>
+      <app-user-block
+        [name]="getFullName() | async"
+        [image]="(userInfo$ | async).avatar"
+      ></app-user-block>
+    </div>
+  </div>
+</mat-toolbar>

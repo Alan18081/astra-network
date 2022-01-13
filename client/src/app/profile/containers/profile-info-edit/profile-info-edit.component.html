@@ -1,0 +1,67 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" fxLayout="column">
+  <app-subtitle>Personal info</app-subtitle>
+  <div fxLayout fxLayoutGap="30px">
+    <mat-form-field fxFlex="1 0 auto">
+      <input
+        type="text"
+        matInput
+        formControlName="firstName"
+        placeholder="First name"
+      >
+      <mat-error *ngIf="form.get('firstName').hasError('required')">First name cannot be empty</mat-error>
+    </mat-form-field>
+    <mat-form-field fxFlex="1 0 auto">
+      <input
+        type="text"
+        matInput
+        formControlName="lastName"
+        placeholder="Last name"
+      >
+      <mat-error *ngIf="form.get('lastName').hasError('required')">Last name cannot be empty</mat-error>
+    </mat-form-field>
+  </div>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="email"
+      placeholder="Email"
+    >
+    <mat-error *ngIf="form.get('email').hasError('required')">Email cannot be empty</mat-error>
+    <mat-error *ngIf="form.get('email').hasError('email')">Email should have at least 3 characters</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="phone"
+      placeholder=""
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="status"
+      placeholder="Phrase of day"
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <textarea
+      type="text"
+      matInput
+      formControlName="info"
+      placeholder="Something about yourself"
+    ></textarea>
+  </mat-form-field>
+  <app-file-loader
+    formControlName="avatar"
+    [icon]="'add_a_photo'"
+  ></app-file-loader>
+  <app-file-loader
+    formControlName="background"
+    [icon]="'add_photo_alternate'"
+  ></app-file-loader>
+  <button mat-button type="submit">Save changes</button>
+</form>
+

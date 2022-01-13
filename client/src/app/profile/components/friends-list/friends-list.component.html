@@ -1,0 +1,8 @@
+<app-section-head [title]="'Friends'"></app-section-head>
+<div class="list" fxLayout>
+  <app-friends-item
+    *ngFor="let user of list"
+    [name]="user.firstName"
+    [avatar]="user.avatar"
+  ></app-friends-item>
+</div>

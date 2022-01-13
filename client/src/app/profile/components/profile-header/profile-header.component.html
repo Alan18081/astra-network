@@ -1,0 +1,15 @@
+<div>
+  <div class="bg">
+    <img [src]="background" alt="Background">
+  </div>
+  <div class="info" fxLayout fxLayoutAlign="center center">
+    <div class="avatar">
+      <img [src]="avatar" alt="Avatar">
+    </div>
+    <div>
+      <p class="name">{{ name }}</p>
+      <p class="status">{{ status }}</p>
+    </div>
+    <div *ngIf="online" class="online"></div>
+  </div>
+</div>

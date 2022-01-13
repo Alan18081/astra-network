@@ -1,0 +1,15 @@
+<mat-card>
+  <div class="head" fxLayoutAlign="space-between center">
+    <app-user-block
+      [image]="note.author.avatar"
+      [firstName]="note.author.firstName"
+      [lastName]="'note.author.lastName"
+    ></app-user-block>
+    <p class="date">{{ note.createdAt }}</p>
+  </div>
+  <h3 class="title">{{ note.title }}</h3>
+  <p class="text">{{ note.text }}</p>
+  <div class="images" *ngIf="note.files">
+    <img class="img" *ngFor="let file of note.files" [src]="file.url" alt="">
+  </div>
+</mat-card>
